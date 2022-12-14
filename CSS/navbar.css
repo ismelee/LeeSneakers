@@ -1,0 +1,683 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 引用字體 */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Azeret+Mono:ital,wght@0,700;1,400;1,500;1,600&family=Comfortaa:wght@500&family=Cookie&family=Courgette&family=Dancing+Script:wght@500&family=Kalam&family=Mochiy+Pop+One&family=Monoton&family=Mukta:wght@300;400&display=swap');
+
+/* =================== 導覽列 ====================== */
+.navbar {
+    width: 100%;
+    /* height: 112.5px; */
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px black;
+    padding: 0px 30px 0;
+    background: rgba(54, 96, 67, 0.953);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    transition: all .3s ease;
+}
+
+.navbar-box-shadow {
+    box-shadow: 0 4px 12px black;
+    height: 90px;
+    background: rgba(54, 96, 67, 0.953);
+}
+
+.intro-img {
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    position: relative;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-family: 'Norican', cursive;
+    letter-spacing: 7px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: scale(1);
+    margin-top: 10px;
+}
+
+.title img {
+    width: 35px;
+    position: absolute;
+    top: 32px;
+    left: 185px;
+}
+
+.title h2:hover {
+    text-shadow: 1px 0px 1px rgb(199, 192, 192);
+    transform: scale(1.02);
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.title {
+    margin-left: 10px;
+}
+
+.intro {
+    width: 690px;
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+}
+
+/* ------ */
+
+.intro>h2>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ------ */
+
+.intro *:not(.fa-chevron-down) {
+    margin: 0 20px 0;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.nav-list {
+    margin: 0 0 0 45px;
+    color: white;
+}
+
+.nav-list::after {
+    content: "";
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 0;
+    height: 5px;
+    background: rgb(138, 194, 138);
+    transition: all .3s ease;
+}
+
+
+.nav-list:hover::after {
+    width: 100%;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    top: 23px;
+    left: 95px;
+    font-size: 18px;
+    color: white;
+    /* color: black; */
+}
+
+.shoes-type {
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background: rgb(249, 249, 249);
+    border-radius: 12px;
+    display: none;
+    transition: all 1s ease;
+}
+
+.active {
+    display: block;
+}
+
+.shoes-type p {
+    font-size: 20px;
+}
+
+.shoes-type>a {
+    text-decoration: none;
+    color: black;
+}
+
+.shoes-type p::after {
+    content: "";
+    display: block;
+    margin: 10px auto 0 auto;
+    width: 0;
+    height: 3px;
+    background: rgb(155, 148, 193);
+    transition: all .3s ease;
+}
+
+.shoes-type p:hover::after {
+    width: 100%;
+}
+
+.nav-shoes-list,
+.nav-list {
+    font-family: YouYuan;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+
+.nav-img1,
+.nav-img2,
+.nav-img3 {
+    width: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.fa-magnifying-glass,
+.fa-cart-shopping,
+.fa-user-large {
+    color: white;
+    font-size: 23px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.p-nav-img4 {
+    display: none;
+}
+
+.nav-img1 {
+    margin-right: 200px;
+}
+
+.fa-magnifying-glass {
+    margin-right: 200px;
+}
+
+.search-input {
+    position: absolute;
+    top: -2px;
+    left: 33px;
+    height: 25px;
+    margin-right: 25px;
+    border-radius: 5px;
+    /* border: none; */
+    border: 0.5px outset black;
+    height: 25px;
+    /* text-decoration: none; */
+}
+
+.intro-img>div {
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: orange;
+    position: absolute;
+    top: -10px;
+    right: 60px;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+}
+
+.intro-img-rwd {
+    display: none;
+    position: relative;
+}
+
+#signout {
+    display: none;
+}
+
+
+.intro-img-rwd>div {
+    /* border: 1px solid red; */
+    /* border-radius: 50%; */
+    cursor: pointer;
+    /* background-color: orange; */
+    position: absolute;
+    color: rgb(25, 74, 11);
+    top: 211px;
+    left: 61px;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    width: 30px;
+    height: 0px;
+}
+
+/* ======================== 搜尋欄位 ==================== */
+
+.banner-search {
+    position: absolute;
+    width: 800px;
+    height: 200px;
+    background: rgba(58, 105, 206, 0.977);
+    border-radius: 20px;
+    top: 150px;
+    left: 200px;
+    z-index: 3;
+}
+
+.banner-search div * {
+    padding-left: 95px;
+}
+
+.banner-search div h4 {
+    padding-top: 15px;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.banner-search div h6 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+.banner-search input {
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: none;
+    width: 590px;
+    height: 33px;
+}
+
+.welcome {
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    bottom: -13px;
+    right: 45px;
+}
+
+/* =================== 導覽列結束 ====================== */
+
+/* ========================================== rwd ================================= */
+
+
+/* ============ 導覽列 ================== */
+
+@media (max-width:1350px) {
+
+    /* ============ 中間功能欄位 ============= */
+    .intro>h2>a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .intro {
+        position: fixed;
+        width: 100%;
+        height: 110vh;
+        top: -20px;
+        right: -100%;
+        flex-direction: column;
+        background: rgba(134, 131, 131, 0.867);
+        transition: all .4s ease;
+        z-index: 4;
+        padding-top: 90px;
+    }
+
+    .fa-chevron-down {
+        display: none;
+    }
+
+    .intro h2 {
+        font-size: 30px;
+        text-align: center;
+        color: black;
+    }
+
+    .p-nav-img4 {
+        margin-top: 15px;
+        display: block;
+    }
+
+    .fa-bars {
+        color: white;
+        position: relative;
+        display: block;
+        margin-left: 10px;
+        z-index: 10;
+        font-size: 37px;
+        margin-top: 5px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .show {
+        right: 0;
+    }
+
+    .shoes-type {
+        width: 60%;
+        position: relative;
+        left: 0;
+        top: 0;
+        display: none;
+        background: rgba(131, 131, 170, 0);
+        transition: all 1s ease;
+    }
+
+    .shoes-type p {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .shoes-type p::after {
+        background: white;
+        transition: all .3s ease;
+    }
+
+    .nav-shoes-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .active {
+        display: block;
+    }
+}
+
+@media (max-width:810px) {
+    .navbar {
+        padding: 0 20px;
+        height: 90px;
+    }
+
+    #carousel {
+        top: 90px;
+    }
+
+    .intro {
+        padding-top: 25px;
+    }
+
+    .title h2 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .title img {
+        width: 33px;
+        top: 30px;
+        left: 170px;
+    }
+
+    .intro-img {
+        display: none;
+    }
+
+    .intro-img-rwd {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .intro-img-rwd:hover {
+        cursor: default;
+    }
+
+    .intro-img-rwd p {
+        width: 80px;
+        cursor: default;
+    }
+
+    .search-input {
+        position: absolute;
+        width: 180px;
+        top: 55px;
+        left: 70px
+    }
+
+    .search-input:hover {
+        cursor: text;
+    }
+
+    .nav-img1,
+    .nav-img2,
+    .nav-img3 {
+        width: 28px;
+    }
+
+    .fa-magnifying-glass,
+    .fa-cart-shopping,
+    .fa-user-large {
+        font-size: 20px;
+        color: black;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+    }
+
+    .shoes-type p {
+        font-size: 15px;
+        top: 0px;
+        left: 345px;
+    }
+
+    .shoes-type p::after {
+        content: "";
+        display: block;
+        margin: 0;
+        width: 0;
+        height: 3px;
+        background: rgb(253, 252, 255);
+        transition: all .3s ease;
+    }
+
+    .shoes-type {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        position: relative;
+        left: 0px;
+        top: 0;
+        display: none;
+        background: rgba(131, 131, 170, 0);
+        transition: all 1s ease;
+    }
+
+    .shoes-type p {
+        width: 78px;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .welcome {
+        font-weight: 600;
+        font-size: 13px;
+        color: white;
+        position: absolute;
+        bottom: -13px;
+        right: 34px;
+    }
+
+    .search-input2 {
+        height: 20px;
+        width: 200px;
+    }
+
+    .intro-img-rwd>div {
+        /* border: 1px solid red; */
+        /* border-radius: 50%; */
+        cursor: pointer;
+        /* background-color: orange; */
+        position: absolute;
+        color: rgb(25, 74, 11);
+        top: 179px;
+        left: 50px;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        width: 30px;
+        height: 0px;
+    }
+}
+
+@media (max-width:400px) {
+    .navbar {
+        height: 65px;
+    }
+
+    #carousel {
+        top: 65px;
+    }
+
+    .title {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .title h2 {
+        margin-top: 0px;
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    .title img {
+        width: 30px;
+        top: 21px;
+        left: 120px;
+    }
+
+    .fa-bars {
+        font-size: 25px;
+        margin-right: 0;
+    }
+
+    .intro h2 {
+        font-size: 15px;
+    }
+
+    .shoes-type p {
+        font-size: 8px;
+    }
+
+    .welcome {
+        display: none;
+    }
+}
+
+@media(max-width:360px) {
+    .intro h2 {
+        font-size: 10px;
+        letter-spacing: 0px;
+    }
+
+    .shoes-type p {
+        font-size: 5px;
+    }
+
+    .nav-img1,
+    .nav-img2,
+    .nav-img3 {
+        width: 20px;
+    }
+
+    .fa-magnifying-glass,
+    .fa-cart-shopping,
+    .fa-user-large {
+        font-size: 20px;
+    }
+
+    .search-input {
+        width: 120px;
+        top: 52px;
+        left: 50px
+    }
+
+    .intro-img-rwd {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .intro-img-rwd>div {
+        /* border: 1px solid red; */
+        /* border-radius: 50%; */
+        cursor: pointer;
+        /* background-color: orange; */
+        position: absolute;
+        color: rgb(25, 74, 11);
+        top: 179px;
+        left: 50px;
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        width: 30px;
+        height: 0px;
+    }
+}
+
+@media(max-width:285px) {
+    .navbar {
+        padding: 0 3px;
+        height: 45px;
+    }
+
+    #carousel {
+        top: 45px;
+    }
+
+    .fa-bars {
+        font-size: 18px;
+        margin-top: 0px;
+    }
+
+    .title h2 {
+        padding: 0 0 7px 0;
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+
+    .title img {
+        width: 25px;
+        top: 13px;
+        left: 80px;
+    }
+
+    .search-input {
+        width: 70px;
+        top: 52px;
+        left: 50px
+    }
+
+
+}
+
+@media(max-width:260px) {
+    .search-input2 {
+        position: relative;
+        height: 20px;
+        width: 120px;
+        left: -35px;
+    }
+}

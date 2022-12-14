@@ -1,0 +1,324 @@
+.favorite-list {
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+
+.name {
+    width: 90%;
+    height: 200px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.favorite {
+    width: 90%;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.my-fav {
+    position: absolute;
+    padding-bottom: 18px;
+    top: 80px;
+    left: 160px;
+    border-bottom: 5px ridge rgba(0, 128, 0, 0.651);
+}
+
+.my-fav h3 {
+    font-size: 50px;
+    font-family: YouYuan;
+    font-weight: 600;
+}
+
+.fa-heart {
+    color: red;
+    margin-left: 15px;
+}
+
+.item {
+    width: 1500px;
+    border-bottom: 3px solid rgb(147, 138, 138);
+    border-left: 3px solid rgb(147, 138, 138);
+    /* background: rgba(98, 98, 155, 0.645); */
+    margin-bottom: 50px;
+    display: flex;
+}
+
+.img {
+    width: 40%;
+}
+
+.infor {
+    width: 60%;
+}
+
+.img img {
+    width: 100%;
+}
+
+.notice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notice>h2 {
+    font-size: 60px;
+    text-align: center;
+    /* border: 1px solid green; */
+    margin-top: 30px;
+    margin-bottom: 90px;
+    width: 100%;
+}
+
+.notice>h3 {
+    text-align: center;
+    font-size: 60px;
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.infor {
+    width: 60%;
+}
+
+.shoe-name p,
+.type p,
+.size p,
+.price p {
+    font-size: 40px;
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+.price p {
+    color: rgb(202, 118, 118);
+}
+
+.recommend button {
+    margin-top: 5px;
+    width: 500px;
+    height: 55px;
+    font-size: 30px;
+    border: 3px solid black;
+    background: white;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.recommend button:hover {
+    background: orange;
+    border: orange;
+    color: white;
+}
+
+@media(max-width:1300px) {
+    .my-fav {
+        position: absolute;
+        padding-bottom: 18px;
+        top: 80px;
+        left: 50px;
+        border-bottom: 5px ridge rgba(0, 128, 0, 0.651);
+    }
+
+    .my-fav h3 {
+        font-size: 30px;
+        font-family: YouYuan;
+        font-weight: 600;
+    }
+
+    .shoe-name p,
+    .type p,
+    .size p,
+    .price p {
+        font-size: 30px;
+        padding-top: 5px;
+    }
+
+    .recommend button {
+        margin-top: 5px;
+        width: 400px;
+        height: 55px;
+        font-size: 30px;
+        border: 3px solid black;
+        background: white;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+}
+
+@media(max-width:860px) {
+
+    .shoe-name p,
+    .type p,
+    .size p,
+    .price p {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .recommend button {
+        margin-top: 5px;
+        width: 200px;
+        height: 45px;
+        font-size: 20px;
+        border: 3px solid black;
+        background: white;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+
+    .name {
+        width: 90%;
+        height: 100px;
+        position: relative;
+    }
+
+    .my-fav {
+        position: absolute;
+        padding-bottom: 5px;
+        top: 30px;
+        left: 50px;
+        border-bottom: 5px ridge rgba(0, 128, 0, 0.651);
+    }
+
+    .notice {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 450px;
+    }
+
+
+    .notice>h2 {
+        font-size: 50px;
+        text-align: center;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    .notice>h3 {
+        text-align: center;
+        font-size: 50px;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:454px) {
+    .notice {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 450px;
+        margin-bottom: 80px;
+    }
+
+
+    .notice>h2 {
+        font-size: 45px;
+        text-align: center;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    .notice>h3 {
+        text-align: center;
+        font-size: 45px;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:600px) {
+    .item {
+        width: 1500px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img {
+        width: 100%;
+        order: 1;
+    }
+
+    .infor {
+        width: 100%;
+        order: 2;
+    }
+}
+
+@media(max-width:320px) {
+    .my-fav {
+        position: absolute;
+        padding-bottom: 5px;
+        top: 20px;
+        left: 10px;
+        border-bottom: 5px ridge rgba(0, 128, 0, 0.651);
+    }
+
+    .my-fav h3 {
+        font-size: 20px;
+        font-family: YouYuan;
+        font-weight: 600;
+    }
+
+    .shoe-name p,
+    .type p,
+    .size p,
+    .price p {
+        font-size: 15px;
+        padding-top: 0px;
+    }
+
+    .recommend button {
+        margin-top: 0px;
+        width: 120px;
+        height: 35px;
+        font-size: 15px;
+        border: 3px solid black;
+        background: white;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+
+    .favorite-list {
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .notice>h2 {
+        font-size: 30px;
+        text-align: center;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    .notice>h3 {
+        text-align: center;
+        font-size: 30px;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

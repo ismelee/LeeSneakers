@@ -1,0 +1,414 @@
+.favorite-list {
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid blue; */
+}
+
+.name {
+    width: 90%;
+    height: 200px;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.favorite {
+    position: relative;
+    width: 90%;
+    border-top: 5px ridge rgba(0, 128, 0, 0.651);
+    border-bottom: 5px ridge rgba(0, 128, 0, 0.651);
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.my-fav {
+    position: absolute;
+    padding-bottom: 18px;
+    top: 120px;
+    left: 160px;
+    /* border-bottom: 5px ridge rgba(0, 128, 0, 0.651); */
+}
+
+.my-fav h3 {
+    font-size: 50px;
+    font-family: YouYuan;
+    font-weight: 600;
+}
+
+.fa-cart-arrow-down {
+    font-size: 30px;
+    color: rgb(73, 107, 181);
+    margin-left: 15px;
+}
+
+#cart {
+    font-size: 40px;
+}
+
+.item {
+    width: 1500px;
+    /* border: 3px solid black; */
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.img {
+    width: 40%;
+}
+
+.infor {
+    width: 60%;
+    padding-left: 20px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.notice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notice>h2 {
+    font-size: 60px;
+    text-align: center;
+    /* border: 1px solid green; */
+    margin-top: 30px;
+    margin-bottom: 90px;
+    width: 100%;
+}
+
+.notice>h3 {
+    text-align: center;
+    font-size: 60px;
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.shoe-name p,
+.type p,
+.size p,
+.price p {
+    font-size: 40px;
+    padding-top: 5px;
+    font-weight: 600;
+}
+
+.price p {
+    color: rgb(202, 118, 118);
+}
+
+.total>p>span {
+    color: rgb(76, 132, 76);
+}
+
+
+.recommend button {
+    margin-top: 5px;
+    width: 500px;
+    height: 55px;
+    font-size: 30px;
+    border: 3px solid black;
+    background: white;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.recommend button:hover {
+    background: orange;
+    border: orange;
+    color: white;
+}
+
+.checkout {
+    /* border: 1px solid red; */
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.total p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.total button {
+    width: 330px;
+    height: 55px;
+    font-weight: 600;
+    font-size: 30px;
+    background: white;
+    border: 3px solid rgb(32, 32, 171);
+    transition: all .3s ease;
+    margin: 30px 0 40px 0;
+}
+
+.total button:hover {
+    background: rgb(48, 135, 73);
+    border: rgb(48, 135, 73);
+    color: white;
+}
+
+@media(max-width:1300px) {
+    .my-fav {
+        position: absolute;
+        padding-bottom: 18px;
+        top: 130px;
+        left: 50px;
+    }
+
+    .my-fav h3 {
+        font-size: 30px;
+        font-family: YouYuan;
+        font-weight: 600;
+    }
+
+    .shoe-name p,
+    .type p,
+    .size p,
+    .price p {
+        font-size: 30px;
+        padding-top: 5px;
+    }
+
+    .recommend button {
+        margin-top: 5px;
+        width: 400px;
+        height: 55px;
+        font-size: 30px;
+        border: 3px solid black;
+        background: white;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+
+
+    #cart {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:860px) {
+
+    .shoe-name p,
+    .type p,
+    .size p,
+    .price p {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    .recommend button {
+        margin-top: 5px;
+        width: 200px;
+        height: 45px;
+        font-size: 20px;
+        border: 3px solid black;
+        background: white;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+
+    .name {
+        width: 90%;
+        height: 100px;
+        position: relative;
+    }
+
+    .my-fav {
+        position: absolute;
+        padding-bottom: 5px;
+        top: 30px;
+        left: 50px;
+    }
+
+    .total p {
+        font-size: 30px;
+    }
+
+    .total button {
+        width: 230px;
+        height: 55px;
+        font-weight: 600;
+        font-size: 20px;
+        background: white;
+        border: 3px solid rgb(32, 32, 171);
+        transition: all .3s ease;
+        margin: 20px 0 40px 0;
+    }
+
+    .fa-cart-arrow-down {
+        font-size: 20px;
+        color: rgb(73, 107, 181);
+        margin-left: 15px;
+    }
+
+    .notice {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 450px;
+    }
+
+
+    .notice>h2 {
+        font-size: 50px;
+        text-align: center;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    .notice>h3 {
+        text-align: center;
+        font-size: 50px;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:454px) {
+    .notice {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 450px;
+        margin-bottom: 80px;
+    }
+
+
+    .notice>h2 {
+        font-size: 45px;
+        text-align: center;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    .notice>h3 {
+        text-align: center;
+        font-size: 45px;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:600px) {
+    .item {
+        width: 1500px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img {
+        width: 100%;
+        order: 1;
+    }
+
+    .infor {
+        width: 100%;
+        order: 2;
+    }
+
+    .total p {
+        font-size: 20px;
+    }
+
+    .total button {
+        width: 160px;
+        height: 45px;
+        font-weight: 600;
+        font-size: 20px;
+        background: white;
+        border: 3px solid rgb(32, 32, 171);
+        transition: all .3s ease;
+        margin: 0px 0 40px 0;
+    }
+}
+
+@media(max-width:320px) {
+    .my-fav {
+        position: absolute;
+        padding-bottom: 5px;
+        top: 50px;
+        left: 10px;
+    }
+
+    .my-fav h3 {
+        font-size: 20px;
+        font-family: YouYuan;
+        font-weight: 600;
+    }
+
+    .shoe-name p,
+    .type p,
+    .size p,
+    .price p {
+        font-size: 15px;
+        padding-top: 0px;
+    }
+
+    .recommend button {
+        margin-top: 0px;
+        width: 120px;
+        height: 35px;
+        font-size: 15px;
+        border: 3px solid black;
+        background: white;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+
+    .favorite-list {
+        position: relative;
+        top: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #cart {
+        font-size: 20px;
+    }
+
+    .fa-cart-arrow-down {
+        display: none;
+    }
+
+    #cart {
+        display: inline;
+    }
+
+    .notice>h2 {
+        font-size: 30px;
+        text-align: center;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+        margin-bottom: 90px;
+        width: 100%;
+    }
+
+    .notice>h3 {
+        text-align: center;
+        font-size: 30px;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

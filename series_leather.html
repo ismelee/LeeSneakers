@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leesnk 二手鞋鋪</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1839/1839349.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Norican&family=Noto+Sans+SC:wght@400;500;700&family=Pacifico&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bs5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- slcik -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- 自己 -->
+    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/series.css">
+</head>
+
+<body>
+    <!-------------------------------- 導覽列 ------------------------------->
+    <header>
+        <nav class="navbar">
+            <div class="title">
+                <a href="landingPage.html">
+                    <h2 class="title-name">Leesnk</h2>
+                </a>
+                <img src="https://cdn-icons-png.flaticon.com/512/1839/1839349.png" alt="">
+            </div>
+            <div class="intro">
+                <h2 class="nav-shoes-list">
+                    鞋款列表
+                </h2>
+                <div class="shoes-type">
+                    <a href="series_casual.html" data-type="休閒鞋款">
+                        <p>休閒鞋款</p>
+                    </a>
+                    <a href="series_sport.html" data-type="運動鞋款">
+                        <p>運動鞋款</p>
+                    </a>
+                    <a href="series_leather.html" data-type="皮鞋鞋款">
+                        <p>皮鞋鞋款</p>
+                    </a>
+                    <a href="series_sandal.html" data-type="拖鞋涼鞋鞋款">
+                        <p>拖鞋涼鞋鞋款</p>
+                    </a>
+                    <a href="series_mountain.html" data-type="登山鞋款">
+                        <p>登山鞋款</p>
+                    </a>
+                </div>
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/32/32195.png" class="list-bar" alt=""> -->
+                <i class="fa-solid fa-chevron-down"></i>
+                <h2 class="nav-list" id="like"><a>我的最愛</a>
+                </h2>
+                <h2 class="nav-list" id="option"><a>意見回饋</a>
+                </h2>
+                <h2 class="nav-list" id="login"><a href="sign-regis.html">登入/註冊</a>
+                </h2>
+                <h2 class="nav-list" id="signout"><a>登出</a>
+                </h2>
+
+                <!------------------------------------------ 查詢rwd --------------------------------------->
+
+                <div class="intro-img-rwd">
+                    <!-- 查詢 -->
+                    <p>
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" class="nav-img1" alt=""> -->
+                        <i class="fa-solid fa-magnifying-glass" id="glass2"></i>
+                    </p>
+                    <input type="text" class="search-input2" placeholder="ex:休閒、運動">
+                    <!-- 購物車 -->
+                    <p>
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/4175/4175270.png" class="nav-img2" alt=""> -->
+                        <i class="fa-solid fa-cart-shopping" id="shop2"></i>
+                    <div>: 0</div>
+                    </p>
+                    <!-- 會員 -->
+                    <p>
+                        <!-- <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="nav-img3" alt=""> -->
+                        <i class="fa-solid fa-user-large" id="large2"></i>
+                    </p>
+                    <!-- <p><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="nav-img4" alt=""></p> -->
+                </div>
+            </div>
+
+            <!-------------------------------------------------- 查詢pc版 ---------------------------------->
+            <div class="intro-img">
+                <!-- 查詢 -->
+                <p>
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" class="nav-img1" alt=""> -->
+                    <i class="fa-solid fa-magnifying-glass" id="glass"></i>
+                </p>
+                <input type="text" class="search-input" placeholder="ex:休閒、運動">
+                <!-- 購物車 -->
+                <p>
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/4175/4175270.png" class="nav-img2" alt=""> -->
+                    <i class="fa-solid fa-cart-shopping" id="shop"></i>
+                <div>0</div>
+                </p>
+                <!-- 會員 -->
+                <p>
+                    <!-- <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" class="nav-img3" alt=""> -->
+                    <i class="fa-solid fa-user-large" id="large"></i>
+                </p>
+                <!-- <p><img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="nav-img4" alt=""></p> -->
+            </div>
+            <p class="p-nav-img4">
+                <!-- <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" class="nav-img4"
+                    alt=""> -->
+                <i class="fa-solid fa-bars"></i>
+            </p>
+            <p class="welcome">歡迎 <span></span> !</p>
+        </nav>
+    </header>
+    <!-------------------------------- 導覽列結束 ------------------------------->
+
+    <section>
+        <div class="outside">
+            <!-- 左 -->
+            <div class="left">
+                <div class="left-list">
+                    <div class="series">
+                        <p>找鞋款</p>
+                        <i class="fa-solid fa-up-down"></i>
+                    </div>
+                    <!-- 下拉鞋款列表 -->
+                    <div class="shoes-down">
+                        <div class="drop-down">
+                            <p>休閒鞋款</p>
+                            <p>運動鞋款</p>
+                            <p>皮鞋鞋款</p>
+                            <p>拖鞋涼鞋鞋款</p>
+                            <p>登山鞋款</p>
+                        </div>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="brand">
+                        <p>找品牌</p>
+                        <i class="fa-solid fa-up-down"></i>
+                    </div>
+                    <!-- 下拉品牌列表 -->
+                    <div class="brand-down">
+                        <div class="drop-down2">
+                            <p>nike</p>
+                            <p>adidas</p>
+                            <p>newbalance</p>
+                            <p>converse</p>
+                            <p>puma</p>
+                            <p>lanew</p>
+                            <p>vanger</p>
+                            <p>teva</p>
+                            <p>merrell</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 右 -->
+            <div class="right">
+                <!-- 上方 -->
+                <div class="right-top">
+                    <h3>休閒鞋款</h3>
+                    <p><span>Leesnk</span>讓你的青春永不熄滅</p>
+                </div>
+                <!-- 下方 -->
+                <div class="right-shoes">
+                    <div class="inside">
+                        <!-- 載入動畫 -->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            style="margin:auto;background:#fff;display:block;" width="200px" height="200px"
+                            viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                            <rect x="15" y="30" width="10" height="40" fill="#e15b64">
+                                <animate attributeName="opacity" dur="1s" repeatCount="indefinite" calcMode="spline"
+                                    keyTimes="0;0.5;1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="1;0.2;1"
+                                    begin="-0.6">
+                                </animate>
+                            </rect>
+                            <rect x="35" y="30" width="10" height="40" fill="#f47e60">
+                                <animate attributeName="opacity" dur="1s" repeatCount="indefinite" calcMode="spline"
+                                    keyTimes="0;0.5;1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="1;0.2;1"
+                                    begin="-0.4">
+                                </animate>
+                            </rect>
+                            <rect x="55" y="30" width="10" height="40" fill="#f8b26a">
+                                <animate attributeName="opacity" dur="1s" repeatCount="indefinite" calcMode="spline"
+                                    keyTimes="0;0.5;1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="1;0.2;1"
+                                    begin="-0.2">
+                                </animate>
+                            </rect>
+                            <rect x="75" y="30" width="10" height="40" fill="#abbd81">
+                                <animate attributeName="opacity" dur="1s" repeatCount="indefinite" calcMode="spline"
+                                    keyTimes="0;0.5;1" keySplines="0.5 0 0.5 1;0.5 0 0.5 1" values="1;0.2;1" begin="-1">
+                                </animate>
+                            </rect>
+                        </svg>
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+                          
+                            <div class="shoes-img">
+                                <img src="./shoes-list/NikeAirForce.jpg" alt="">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">Nike Air Force 1</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 3500</p>
+                                <s>NT$ 4000</s>
+                            </div>
+                            
+                        </div> -->
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+                            
+                            <div class="shoes-img">
+                                <img src="./shoes-list/Converse1970.jpg" alt="">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">Converse 1970</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 2050</p>
+                                <s>NT$ 2480</s>
+                            </div>
+                            
+                        </div> -->
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+                            
+                            <div class="shoes-img">
+                                <img src="./shoes-list/NB996.jpg" alt="">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">NB 996</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 3140</p>
+                                <s>NT$ 3650</s>
+                            </div>
+                        
+                        </div> -->
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+                         
+                            <div class="shoes-img">
+                                <img src="./shoes-list/NikeAirJordan.jpg">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">Nike Air Jordan</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 4000</p>
+                                <s>NT$ 5840</s>
+                            </div>
+                    
+                        </div> -->
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+                      
+                            <div class="shoes-img">
+                                <img src="./shoes-list/NBXC72.jpg" alt="">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">NB XC-72</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 3200</p>
+                                <s>NT$ 3800</s>
+                            </div>
+                  
+                        </div> -->
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+                      
+                            <div class="shoes-img">
+                                <img src="./shoes-list/Converse70HI.jpg" alt="">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">Converse 70 HI</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 1800</p>
+                                <s>NT$ 2540</s>
+                            </div>
+                
+                        </div> -->
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+                  
+                            <div class="shoes-img">
+                                <img src="./shoes-list/NB237.jpg" alt="">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">NB 237</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 2100</p>
+                                <s>NT$ 2680</s>
+                            </div>
+                   
+                        </div> -->
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+             
+                            <div class="shoes-img">
+                                <img src="./shoes-list/ConverseRunStar.jpg" alt="">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">Converse Run Star</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 2500</p>
+                                <s>NT$ 3580</s>
+                            </div>
+             
+                        </div> -->
+                        <!-- 鞋卡 -->
+                        <!-- <div class="item">
+              
+                            <div class="shoes-img">
+                                <img src="./shoes-list/NikeAirPegasus.jpg" alt="">
+                            </div>
+                            <div class="shoes-infor">
+                                <p class="shoes-name">Nike Air Pegasus</p>
+                                <p class="type">休閒鞋款</p>
+                                <p>NT$ 2500</p>
+                                <s>NT$ 3100</s>
+                            </div>
+             
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="about">
+                <div>
+                    <a href="#">
+                        <h2>Leesnk</h2>
+                    </a>
+                    <img src="https://cdn-icons-png.flaticon.com/512/1839/1839349.png" alt="">
+                    <p>我們致力於幫助社會大眾，重視每一個顧客所顧慮的問題，為客人尋找到最滿意、最合適的鞋款，同時也積極參與企業社會責任，固定將收益和鞋子捐獻給偏遠地區的孩童，這是我們想要做的事。
+                    </p>
+                    <h6>Copyright 2022 <span>Leesnk</span> All rights reserved</h6>
+                    <h6>本網站資訊多數取自於網路，為網頁作品練習所使用，無任何商業營利之行為</h6>
+                </div>
+            </div>
+            <div class="contact">
+                <div>
+                    <h5>聯絡我們</h5>
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="">
+                    <p>Facebook</p>
+                    <br>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="">
+                    <p>Instagram</p>
+                    <br>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3536/3536785.png" alt="">
+                    <p>LINE</p>
+                    <br>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png" alt="">
+                    <p>E-mail</p>
+                    <br>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="">
+                    <p>Twitter</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- slcik -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <!-- slcik -->
+    <!-- bs5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- sweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./JS/navbar.js"></script>
+    <script src="./JS/member.js"></script>
+    <script src="./JS/cart-num.js"></script>
+    <script src="./JS/series_leather.js"></script>
+    <script src="./JS/series.js"></script>
+    <script src="./JS/welcome.js"></script>
+</body>
+
+</html>

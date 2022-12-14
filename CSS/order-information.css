@@ -1,0 +1,318 @@
+section {
+    position: relative;
+    top: 90px;
+    background-image: url("../輪播/sh.3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: rgba(111, 107, 107, 0.6);
+}
+
+.big {}
+
+.order-information {
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.order-title {
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-bottom: 30px;
+}
+
+.order-title h3 {
+    font-size: 40px;
+    color: white;
+    font-family: YouYuan;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.order {
+    border: 3px solid black;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.751);
+    padding: 40px 0;
+    margin-bottom: 110px;
+}
+
+.name,
+.address,
+.number {
+    display: flex;
+    justify-content: center;
+}
+
+.name,
+.address,
+.number,
+.tips {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.name p,
+.address p,
+.number p {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.name input,
+.address input,
+.number input {
+    width: 250px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.buyer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tips p {
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+.tips div {
+    width: 300px;
+    background: rgb(111, 106, 106);
+    padding-top: 10px;
+    border-radius: 50px;
+}
+
+.tips {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    /* width: 150px; */
+}
+
+.buyer button {
+    position: relative;
+    top: -40px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    border: 3px solid black;
+    background: white;
+    transition: all .3s ease;
+}
+
+.buyer button:hover {
+    background: rgb(48, 135, 73);
+    border: rgb(48, 135, 73);
+    color: white;
+}
+
+@media(max-width:1000px) {
+
+    .name p,
+    .address p,
+    .number p {
+        font-size: 20px;
+    }
+
+    .name input,
+    .address input,
+    .number input {
+        width: 170px;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    .tips div {
+        width: 250px;
+        background: rgb(111, 106, 106);
+        padding-top: 10px;
+        border-radius: 50px;
+    }
+
+    .tips p {
+        font-size: 13px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .buyer button {
+        width: 170px;
+        height: 50px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        border: 3px solid black;
+        background: white;
+        transition: all .3s ease;
+    }
+
+    .order {
+        border: 3px solid black;
+        width: 70%;
+        height: 500px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.751);
+        padding: 40px 0;
+        margin-bottom: 110px;
+    }
+}
+
+@media(max-width:760px) {
+
+    .name p,
+    .address p,
+    .number p {
+        font-size: 20px;
+    }
+
+    .name input,
+    .address input,
+    .number input {
+        width: 150px;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    .order-title h3 {
+        font-size: 40px;
+        font-family: YouYuan;
+        letter-spacing: 5px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .order-title {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .order-information {
+        position: relative;
+        top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:560px) {
+    .order {
+        border: 3px solid black;
+        width: 95%;
+        text-align: center;
+        padding: 40px 0;
+        margin-bottom: 110px;
+    }
+}
+
+@media(max-width:370px) {
+
+    .name p,
+    .address p,
+    .number p {
+        font-size: 15px;
+    }
+
+    .name input,
+    .address input,
+    .number input {
+        width: 120px;
+        height: 25px;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+
+    .name,
+    .address,
+    .number {
+        display: block;
+    }
+
+    .order-title h3 {
+        font-size: 25px;
+        font-family: YouYuan;
+        letter-spacing: 5px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .buyer button {
+        position: relative;
+        top: -80px;
+        width: 150px;
+        height: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        border: 3px solid black;
+        background: white;
+        transition: all .3s ease;
+    }
+
+    .tips div {
+        width: 230px;
+        background: transparent;
+        padding-top: 10px;
+        border-radius: 50px;
+    }
+
+    .tips p {
+        font-size: 7px;
+        color: red;
+        font-weight: 600;
+    }
+}
+
+@media(max-width:810px) {
+    section {
+        position: relative;
+        top: 90px;
+        background-image: url("../輪播/sh.3.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+        background-color: rgba(111, 107, 107, 0.6);
+    }
+}
+
+@media(max-width:405px) {
+    section {
+        position: relative;
+        top: 65px;
+        background-image: url("../輪播/sh.3.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+        background-color: rgba(111, 107, 107, 0.6);
+    }
+}
+
+@media(max-width:285px) {
+    section {
+        position: relative;
+        top: 45px;
+        background-image: url("../輪播/sh.3.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-blend-mode: multiply;
+        background-color: rgba(111, 107, 107, 0.6);
+    }
+}

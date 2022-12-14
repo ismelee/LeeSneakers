@@ -1,0 +1,374 @@
+section {
+    position: relative;
+    /* top: 120px; */
+}
+
+.whole {
+    /* border: 1px solid black; */
+    background-image: url("../輪播/sh.3.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: rgba(111, 107, 107, 0.6);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /* border-radius: 10px; */
+}
+
+.sign-register {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 220px;
+    /* border: 1px solid green; */
+    width: 1100px;
+    height: 400px;
+    font-family: YouYuan;
+    border-radius: 30px;
+}
+
+.signin,
+.register {
+    width: 40%;
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    /* background: rgba(175, 171, 195, 0.989); */
+    background: rgba(156, 153, 174, 0.91);
+    border-radius: 15px;
+}
+
+.signin {
+    /* border: 2px solid black; */
+}
+
+.register {
+    /* border: 2px solid black; */
+}
+
+.login {
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.member-infor {
+    width: 100%;
+    /* border: 1px solid green; */
+    margin-top: 70px;
+    padding-left: 110px;
+}
+
+.login h3 {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-top: -35px;
+}
+
+.member-infor>div>span {
+    font-size: 15px;
+}
+
+.signin>button,
+.register>button {
+    background: white;
+    letter-spacing: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 110px;
+    margin-top: 40px;
+    width: 210px;
+    height: 35px;
+    border: 2px solid black;
+    transition: all .2s ease;
+}
+
+.signin>button:hover {
+    background: rgb(230, 153, 9);
+    border: 2px solid rgb(230, 153, 9);
+    color: white;
+}
+
+.register>button:hover {
+    background: rgb(230, 153, 9);
+    border: 2px solid rgb(230, 153, 9);
+    color: white;
+}
+
+.login {
+    margin-top: 80px;
+}
+
+.member-infor>div>input {
+    height: 25px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.password,
+.ans {
+    margin-top: 50px;
+}
+
+.mail,
+.ans {
+    border: none;
+}
+
+#name-input,
+.name {
+    margin-bottom: 40px;
+}
+
+.demo-box {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.demo-1,
+.demo-2 {
+    /* width: 50px; */
+    /* height: 30px; */
+    border-radius: 10px;
+    font-size: 25px;
+    transition: all .3s ease;
+    cursor: pointer;
+    color: black;
+    transform: scale(.9);
+    font-weight: 700;
+}
+
+.demo-1:hover {
+    /* color: rgb(25, 119, 25); */
+    color: rgb(15, 104, 15);
+    transform: scale(1);
+}
+
+.demo-2:hover {
+    color: rgb(15, 104, 15);
+    transform: scale(1);
+}
+
+.account,
+.password,
+.name {
+    font-weight: bold;
+}
+
+@media(max-width:1330px) {
+
+    .signin,
+    .register {
+        width: 50%;
+        height: 80%;
+    }
+
+    .signin {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 1px solid black;
+    }
+
+    .register {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: 1px solid black;
+    }
+
+    .sign-register {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        top: 220px;
+        width: 900px;
+        height: 500px;
+        font-family: YouYuan;
+        border-radius: 30px;
+    }
+
+    .signin,
+    .register {
+        height: 87%;
+    }
+
+    .member-infor {
+        width: 100%;
+        /* border: 1px solid green; */
+        margin-top: 90px;
+        padding-left: 120px;
+    }
+
+    .signin>button,
+    .register>button {
+        background: white;
+        letter-spacing: 10px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 120px;
+        margin-top: 40px;
+        width: 210px;
+        height: 35px;
+        border: 2px solid black;
+        transition: all .2s ease;
+    }
+}
+
+@media(max-width:930px) {
+    .login {
+        margin-top: 60px;
+    }
+
+    .login h3 {
+        font-size: 20px;
+    }
+
+    .member-infor>div>span {
+        font-size: 15px;
+    }
+
+    .member-infor {
+        width: 100%;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+        padding-left: 75px;
+    }
+
+    .member-infor>div>input {
+        width: 120px;
+        height: 25px;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+
+    .signin>button,
+    .register>button {
+        background: white;
+        letter-spacing: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 75px;
+        margin-top: 15px;
+        width: 195px;
+        height: 33px;
+        padding: 0px 0px 0px 0;
+        border: 2px solid black;
+        transition: all .2s ease;
+    }
+
+    .password,
+    .ans {
+        margin-top: 20px;
+    }
+
+    .sign-register {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 180px;
+        /* border: 1px solid green; */
+        width: 655px;
+        height: 240px;
+        font-family: YouYuan;
+        border-radius: 30px;
+    }
+
+    .signin,
+    .register {
+        width: 350px;
+        height: 100%;
+    }
+
+    .signin {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-right: none;
+
+    }
+
+    .register {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-left: none;
+        margin-top: 45px;
+    }
+
+    #name-input,
+    .name {
+        margin-bottom: 20px;
+    }
+
+    .demo-box {
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        padding-left: 110px;
+    }
+
+    .demo-1,
+    .demo-2 {
+        width: 120px;
+        /* height: 30px; */
+        /* border: 1px solid red; */
+        font-size: 15px;
+    }
+
+    .signup {
+        position: relative;
+        top: -10px;
+    }
+
+    .signupBtn {
+        position: relative;
+        top: -10px;
+    }
+}
+
+@media(max-width:240px) {
+    .login h3 {
+        font-size: 15px;
+    }
+
+    .member-infor>div>span {
+        font-size: 12px;
+    }
+
+    .member-infor>div>input {
+        width: 90px;
+        height: 25px;
+        border-radius: 5px;
+        margin-left: 5px;
+    }
+
+    .signin>button,
+    .register>button {
+        background: white;
+        letter-spacing: 5px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-left: 105px;
+        margin-top: 15px;
+        width: 140px;
+        height: 30px;
+        padding: 0px 0px 0px 0;
+        border: 2px solid black;
+        transition: all .2s ease;
+    }
+
+    .member-infor {
+        width: 100%;
+        /* border: 1px solid green; */
+        margin-top: 30px;
+        padding-left: 98px;
+    }
+
+}
